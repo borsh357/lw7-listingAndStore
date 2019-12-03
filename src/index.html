@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>APP</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="listing-block">
+      <p>Listing:</p>
+      <select size="10" class="listing-select" multiple>
+          <script id="listing-tmpl" type="text/template">
+            <% items.forEach(function(item) { %>
+              <option><%-item%></option>
+            <% }); %>
+          </script>
+      </select>
+      <div class="listing-controls">
+        <button type="button" id="add-to-store-button">Add to store</button>
+        <button type="button" id="delete-from-listing-button">Delete</button>
+        <hr>
+        <button type="button" id="add-to-listing-button">Add new to listing</button>
+        <button type="button" id="clear-listing-button">Clear listing</button>
+      </div>
+    </div>
+
+    <div class="store-block">
+      <p>Store:</p>
+      <select size="10" class="store-select" multiple>
+          </select>
+      <div class="store-controls">
+        <button type="button" id="remove-from-store-button">Remove from store</button>
+        <button type="button" id="delete-from-store-button">Delete</button>
+        <hr>
+        <button type="button" id="sort-store-button">Sort</button>
+        <button type="button" id="clear-store-button">Clear store</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

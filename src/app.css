@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+}
+
+.listing-block select,
+.store-block select {
+  width: 17rem;
+  min-height: 10rem;
+}
+
+.store-controls {
+  text-align: right;
+}
